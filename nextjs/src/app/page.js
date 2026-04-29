@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import "../index.css";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -58,6 +58,11 @@ export default function Home() {
           >
             Documentation
           </a>
+        </div>
+        <div> 
+          <p className="heading"> HELLO </p>
+
+          <p className="bg-fuchsia-100 p-3 text-amber-500"> WELCOME</p>
         </div>
       </main>
     </div>
