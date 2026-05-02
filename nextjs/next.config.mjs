@@ -1,13 +1,24 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { async redirects(){
-  return[
-    {
-      source: "/about",
-      destination: "/login",
-      permanent: true
-    }
-  ]
-}
+const nextConfig = {
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",
+      },
+      {
+        protocol: "https",
+        hostname: "dummyjson.com"
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.dummyjson.com",
+        pathname: "/**",
+      },
+      
+    ],
+  },
 };
 
 export default nextConfig;
